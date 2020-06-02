@@ -1,12 +1,493 @@
-<!DOCTYPE html>
-<html lang="en-US" class="theme-color-ec407a light_skin">
-
+﻿<!DOCTYPE html>
+    <html lang="fr-FR" class="theme-color-07aaf5 dark_skin">
 
     <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="keywords" content="javaScript, développeur Full-Stack">
+        <meta name="description" content="je suis Yassine Dorboz">
+        <link rel="icon" href="favicon.ico">
+        <title>Yassine Dorboz</title>
+        <style>
+            .section-box img {
+                width: 118px;
+                opacity: .87;
+                transition: .2s
+            }
+
+            .section-box img:hover {
+                opacity: 1
+            }
+
+            #skills .owl-wrapper-outer div {
+                text-align: center;
+            }
+
+            .logo span {
+                margin: 0 !important;
+            }
+
+            .theme-color-07aaf5 mark,
+            .theme-color-07aaf5 .btn-primary,
+            .theme-color-07aaf5 .btn-primary-outer,
+            .theme-color-07aaf5 .btn-sidebar-close,
+            .theme-color-07aaf5 .calendar-today .date,
+            .theme-color-07aaf5 .calendar-body .busy-day,
+            .theme-color-07aaf5 .calendar-body td .current-day,
+            .theme-color-07aaf5 .filter .active:after,
+            .theme-color-07aaf5 .filter-bar .filter-bar-line,
+            .theme-color-07aaf5 .input-field .line:before,
+            .theme-color-07aaf5 .input-field .line:after,
+            .theme-color-07aaf5 .mobile-nav,
+            .theme-color-07aaf5 .head-nav .nav>ul>li>a:after,
+            .theme-color-07aaf5 .post-datetime,
+            .theme-color-07aaf5 .profile-social,
+            .theme-color-07aaf5 .profile-preword span,
+            .theme-color-07aaf5 .progress-bar .bar-fill,
+            .theme-color-07aaf5 .progress-bar .bar-line:after,
+            .theme-color-07aaf5 .price-box.box-primary .btn,
+            .theme-color-07aaf5 .price-box.box-primary .price-box-top,
+            .theme-color-07aaf5 .profile-list .button,
+            .theme-color-07aaf5 .pagination span.page-numbers.current,
+            .theme-color-07aaf5 .pagination a.page-numbers:active,
+            .theme-color-07aaf5 .latest-tweets .slick-dots button:hover,
+            .theme-color-07aaf5 .latest-tweets .slick-dots .slick-active button,
+            .theme-color-07aaf5 .tabs-horizontal .tabs-menu a:hover:after,
+            .theme-color-07aaf5 .tabs-horizontal .tabs-menu .active a:after,
+            .theme-color-07aaf5 .togglebox-header,
+            .theme-color-07aaf5 .accordion-header,
+            .theme-color-07aaf5 .timeline-bar,
+            .theme-color-07aaf5 .timeline-box .dot,
+            .theme-color-07aaf5 .timeline-box-compact .date span,
+            .theme-color-07aaf5 .widget_tag_cloud a:hover,
+            .theme-color-07aaf5 .widget_product_tag_cloud a:hover,
+            .theme-color-07aaf5 .wpcf7-form .wpcf7-submit {
+                background-attachment: fixed;
+                background-color: #07aaf5;
+                background-image: linear-gradient(#07aaf5 0%, #005fff 50%, #9200ff 100%);
+            }
+
+            @keyframes Sidebar_rainbowBorder-dkMw3 {
+
+                0%,
+                to {
+                    background-image: linear-gradient(115deg, #4fcf70, #fad648, #a767e5, #12bcfe)
+                }
+
+                25% {
+                    background-image: linear-gradient(115deg, #fad648, #a767e5, #12bcfe, #4fcf70)
+                }
+
+                50% {
+                    background-image: linear-gradient(115deg, #a767e5, #12bcfe, #4fcf70, #fad648)
+                }
+
+                75% {
+                    background-image: linear-gradient(115deg, #12bcfe, #4fcf70, #fad648, #a767e5)
+                }
+            }
+
+            .container .section-box .profile {
+                background: #fff;
+                border-radius: 3px;
+                justify-content: center;
+                margin: 3px 3px 6px 3px;
+                transition: background-image .5s;
+                width: calc(100% - 6px);
+                position: relative;
+                height: 20%;
+                top: 3px;
+            }
+
+            .container #effect {
+                animation: Sidebar_rainbowBorder-dkMw3 .5s infinite;
+            }
+        </style>
+        <link rel='stylesheet' id='rscard-woocommerce-css' href='./css/woocommerce.css' type='text/css' media='all' />
+        <link rel='stylesheet' id='rscard-woocommerce-layout-css' href='./css/woocommerce-layout.css' type='text/css' media='all' />
+        <link rel='stylesheet' id='rscard-woocommerce-smallscreen-css' href='./css/woocommerce-smallscreen.css' type='text/css' media='all' />
+        <link rel='stylesheet' id='google-font0-css' href='https://fonts.googleapis.com/css?family=Fredoka+One&#038;ver=4.9.13' type='text/css' media='all' />
+        <link rel='stylesheet' id='Open Sans-css' href='https://fonts.googleapis.com/css?family=Open+Sans%3A300%2C400%2C600%2C700&#038;ver=4.9.13' type='text/css' media='all' />
+        <link rel='stylesheet' id='Fredoka One-css' href='https://fonts.googleapis.com/css?family=Fredoka+One%3A400&#038;ver=4.9.13' type='text/css' media='all' />
+        <link rel='stylesheet' id='icon-fonts-map-css' href='./css/map-icons.min.css' type='text/css' media='all' />
+        <link rel='stylesheet' id='icon-fonts-css' href='./css/style.css' type='text/css' media='all' />
+        <link rel='stylesheet' id='bxslider-css' href='./css/jquery.bxslider.css' type='text/css' media='all' />
+        <link rel='stylesheet' id='custom-scroll-css' href='./css/jquery.mCustomScrollbar.min.css' type='text/css' media='all' />
+        <link rel='stylesheet' id='mediaelement-player-css' href='./css/mediaelementplayer.min.css' type='text/css' media='all' />
+        <link rel='stylesheet' id='owl-carousel-css' href='./css/owl.carousel.css' type='text/css' media='all' />
+        <link rel='stylesheet' id='owl-carousel-theme-css' href='./css/owl.theme.css' type='text/css' media='all' />
+        <link rel='stylesheet' id='slick-css' href='./css/slick.css' type='text/css' media='all' />
+        <link rel='stylesheet' id='rscard-style-css' href='./css/style2.css' type='text/css' media='all' />
+        <link rel='stylesheet' id='theme-color-css' href='./css/theme-color.css' type='text/css' media='all' />
+        <script type='text/javascript' src='./js/jquery.js'></script>
+        <script type='text/javascript' src='./js/jquery-migrate.min.js'></script>
+        <script type='text/javascript'>
+            /* <![CDATA[ */
+            var date = {
+                "months": ['Janvier', 'Février', 'Mars', 'Avril', 'Mai', 'Juin', 'Juillet', 'Août', 'Septembre', 'Octobre', 'Novembre', 'Décembre'],
+                "weeks": ['Dimanche', 'Lundi', 'Mardi', 'Mercredi', 'Jeudi', 'Vendredi', 'Samedi']
+            }
+
+            ;
+            /* ]]> */
+        </script>
+        <script type='text/javascript' src='./js/site.js?ver=1'></script>
+        <script type='text/javascript' src='./js/modernizr.js?ver=4.9.13'></script>
+        <link rel='https://api.w.org/' href='./startuper/wp-json/' />
+        <link rel="canonical" href="./startuper/" />
+        <link rel='shortlink' href='./startuper/' />
     </head>
 
-    <body>
-         Coming Soon
+    <body class="home page-template page-template-page-home page-template-page-home-php page page-id-310 woocommerce-no-js header-has-img masthead-fixed loading">
+        <div class="mobile-nav"><button class="btn-mobile mobile-nav-close"><i class="rsicon rsicon-close"></i></button>
+            <div id="mobile-nav" class="mobile-nav-inner">
+                <nav class="nav">
+                    <ul class="clearfix">
+                        <li id="menu-item-468" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home"><a href="/startuper/#about">À propos</a></li>
+                        <li id="menu-item-469" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home"><a href="/startuper/#skills">Compétences</a></li>
+                        <li id="menu-item-470" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home"><a href="/startuper/#experience">Expérience</a></li>
+                        <li id="menu-item-476" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home"><a href="/startuper/#education">Éducation</a></li>
+                        <li id="menu-item-471" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home"><a href="/startuper/#calendar">Calendrier</a></li>
+                        <li id="menu-item-472" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home"><a href="/startuper/#contact">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <div class="sidebar sidebar-fixed"><button class="btn-sidebar btn-sidebar-close"><i class="rsicon rsicon-close"></i></button>
+            <div class="widget-area">
+                <aside class="widget widget-profile">
+                    <div class="profile-photo"><img src="./img/me.jpg" alt="Author Image"></div>
+                    <div class="profile-info">
+                        <h2 class="profile-title">Yassine Dorboz</h2>
+                        <h3 class="profile-position">Devlopper</h3>
+                    </div>
+                </aside>
+                <aside class="widget rs-card-contact-form" style="margin: 0;padding: 0;"><iframe style="width: 100%; position: relative; top: 0; left: 0; right: 0; height: 766px" src="https://docs.google.com/forms/d/e/1FAIpQLSd_gsKCAiRSRc9Z7okud-T1lK54B6Zyo9gG4GKwzQa6fNInlw/viewform"></iframe></aside>
+            </div>
+        </div>
+        <div class="wrapper">
+            <header class="header">
+                <div class="head-bg" style="background-image: url('./css/img/rs-cover-2-2-1-1.jpg')"></div>
+                <div class="head-bar has-woo has-sidebar head-sticky-classic">
+                    <div class="head-bar-inner">
+                        <div class="row">
+                            <div class="col-lg-2 col-md-3 col-xs-6"><a class="logo" href="/" style=" white-space: nowrap; font-size: 20px; "><span>Y</span>assine <span>D</span>ORBOZ</a></div>
+                            <div class="col-lg-10 col-md-9 col-xs-6">
+                                <div class="head-cont clearfix">
+                                    <div class="head-items"><button class="btn-sidebar btn-sidebar-open"><i class="rsicon rsicon-menu"></i></button></div><button class="btn-mobile btn-mobile-nav">Menu</button>
+                                    <div id="head-nav" class="head-nav">
+                                        <nav class="nav">
+                                            <ul class="clearfix">
+                                                <li id="menu-item-468" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home"><a href="./startuper/#about">À propos</a></li>
+                                                <li id="menu-item-469" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home"><a href="./startuper/#skills">Compétences</a></li>
+                                                <li id="menu-item-474" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home current-menu-ancestor current-menu-parent menu-item-has-children"><a href="./startuper/#experience">Expérience</a><span class='rsicon rsicon-chevron-down'></span></li>
+                                                <li id="menu-item-476" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home"><a href="./startuper/#education">Éducation</a></li>
+                                                <li id="menu-item-471" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home"><a href="./startuper/#calendar">Calendrier</a></li>
+                                                <li id="menu-item-472" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home"><a href="./startuper/#contact">Contact</a></li>
+                                            </ul>
+                                        </nav>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <div class="content">
+                <div class="container">
+                    <section id="about" class="section section-about">
+                        <div class="animate-up background">
+                            <div class="section-box " id="effect">
+                                <div class="profile">
+                                    <div class="row">
+                                        <div class="col-sm-4">
+                                            <div class="profile-photo"><img alt="" src="./img/me.jpg" class="photo"><img alt="" src="./img/me.jpg" class="photo-hover"></div>
+                                        </div>
+                                        <div class="col-sm-8">
+                                            <div class="profile-info">
+                                                <div class="profile-items clearfix">
+                                                    <div class="profile-preword"><span>01110000 01101001 01101110 01100111</span></div>
+                                                </div>
+                                                <h1 class="profile-title"><span>Je suis</span>Yassine DORBOZ</h1>
+                                                <h2 class="profile-position">(Un développeur passionné <b>&&</b> curieux <b>&&</b> ouvert d'esprit)</h2>
+                                            </div>
+                                            <ul class="profile-list">
+                                                <li class="clearfix"> <strong class="title">ÂGE</strong> <span class="cont">28</span> </li>
+                                                <li class="clearfix"> <strong class="title">Adresse</strong> <span class="cont">Ariana, Tunis</span> </li>
+                                                <li class="clearfix"> <strong class="title">E-mail</strong> <span class="cont">yassine.dorboz@gmail.com</span> </li>
+                                                <li class="clearfix"> <strong class="title">Téléphone</strong> <span class="cont">(+216) 52 665 797</span> </li>
+                                            </ul> <br>
+                                            <hr>
+                                            <p> <span style="color: #07aaf5; font-size: 28px; font-weight: bold;">"</span> Faire la différence, c'est pouvoir trouver les rares détails, tout en gardant à l'esprit les chemins qui mènent aux choses faciles <span style="color: #07aaf5; font-size: 28px; font-weight: bold;">"</span> </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="profile-social">
+                                    <ul class="social">
+                                        <li><a href="https://www.facebook.com/yassine.modifier" target="_blank"><i class="rsicon rsicon-facebook"></i></a></li>
+                                        <li><a href="https://tn.linkedin.com/in/yassine-dorboz" target="_blank"><i class="rsicon rsicon-linkedin"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section id="skills" class="section section-skills">
+                        <div class="animate-up">
+                            <h2 class="section-title">Badges numériques (20)</h2>
+                            <div class="section-box">
+                                <div class="clients-carousel">
+                                    <div class="client-logo"> <a href="https://www.youracclaim.com/badges/633cbab4-8802-481a-aece-08da90a3e9c4" target="_blank"> <img src="https://images.youracclaim.com/size/110x110/images/e66007bc-01ff-47bf-a272-ce6fb199421c/ADD%2BAUTH%2BTO%2BWEB%2BAPPS%2B-%2BInnovator.png" alt="" /> </a> </div>
+                                    <div class="client-logo"> <a href="https://www.youracclaim.com/badges/d0ebd3a5-8a14-4a49-a6e7-0d0f60e445a4" target="_blank"> <img src="https://images.youracclaim.com/size/110x110/images/719099d4-481e-4025-8f8b-c373889b058a/Protect%2BSensitive%2BData%2B-%2BInnovator.png" alt="" /> </a> </div>
+                                    <div class="client-logo"> <a href="https://www.youracclaim.com/badges/8d2634df-51e8-4a7a-8544-e0e2d7d97eff" target="_blank"> <img src="https://images.youracclaim.com/size/110x110/images/7d0d2098-6323-4fbd-bbcb-af7695978068/Investigate%2BCybersecurity%2BAttacks%2B-%2BInnovator.png" alt="" /> </a> </div>
+                                    <div class="client-logo"> <a href="https://www.youracclaim.com/badges/44378fde-7e1c-4a3f-81fd-9e405f621e02" target="_blank"> <img src="https://images.youracclaim.com/size/110x110/images/2e42dc74-b988-4de5-af5e-ddb9ff49d517/IDN%2BEmerging%2BTech%2B-%2BCybersecurity%2BIntro.png" alt="" /> </a> </div>
+                                    <div class="client-logo"> <a href="https://www.youracclaim.com/badges/10f230b8-4e3f-43fe-bd6c-b3ac8924f5b1" target="_blank"> <img src="https://images.youracclaim.com/size/110x110/images/b602dfaa-a4b6-4c1d-b21a-c0a167277a7f/IDN%2BCoding%2BIntro%2B-%2BExplorer.png" alt="" /> </a> </div>
+                                    <div class="client-logo"> <a href="https://www.youracclaim.com/badges/9bc5e554-55ab-463f-ae6b-3aa9e3ee35fc" target="_blank"> <img src="https://images.youracclaim.com/size/110x110/images/8db49acd-64a7-49b7-bb27-636f1e6945d6/DNA_Java.png" alt="" /> </a> </div>
+                                    <div class="client-logo"> <a href="https://www.youracclaim.com/badges/713b55f7-4bb6-465e-9b96-37d6a44a02cb" target="_blank"> <img src="https://images.youracclaim.com/size/110x110/images/06d6ccf2-249a-4327-ab52-39c4bab72c21/DNA_React_and_ECMAScript.png" alt="" /> </a> </div>
+                                    <div class="client-logo"> <a href="https://www.youracclaim.com/badges/f47eea68-f01e-4a6f-aaf5-df2037c9cef9" target="_blank"> <img src="https://images.youracclaim.com/size/110x110/images/19b72ea1-2c0f-4ff9-b969-a44ba76d0f6a/IDN%2BNew%2BCollar%2B-%2BExpress%2BWeb%2BFramework%2BV2.png" alt="" /> </a> </div>
+                                    <div class="client-logo"> <a href="https://www.youracclaim.com/badges/27431fed-1bd8-420b-9fe3-6fa829f39362" target="_blank"> <img src="https://images.youracclaim.com/size/110x110/images/2a7a7760-3396-4548-b8e2-ed5c5ed34181/IDN%2BNew%2BCollar%2B-%2BWeb%2BSecurity.png" alt="" /> </a> </div>
+                                    <div class="client-logo"> <a href="https://www.youracclaim.com/badges/d380adf6-3e95-4394-a8e8-6b2174df7a5d" target="_blank"> <img src="https://images.youracclaim.com/size/110x110/images/ecaeb8dd-6859-413b-80b5-b3e3faff2fea/DNA_Nodejs_V2.png" alt="" /> </a> </div>
+                                    <div class="client-logo"> <a href="https://www.youracclaim.com/badges/342444f3-6366-46c5-82d6-c0a442814ff2" target="_blank"> <img src="https://images.youracclaim.com/size/110x110/images/af7a1e48-8bbf-493b-8a82-8eb304a5d3c2/IDN%2BNew%2BCollar%2B-%2BWeb%2BServices%2BV2.png" alt="" /> </a> </div>
+                                    <div class="client-logo"> <a href="https://www.youracclaim.com/badges/17afa033-3d21-4ddd-b567-d90dc7acc556" target="_blank"> <img src="https://images.youracclaim.com/size/110x110/images/6e59d07b-979b-4ead-8548-f25d29e65f9f/IDN%2BNew%2BCollar%2B-%2BAPI.png" alt="" /> </a> </div>
+                                    <div class="client-logo"> <a href="https://www.youracclaim.com/badges/5fae3db1-1c4f-495b-a1a6-32d0815b1b15" target="_blank"> <img src="https://images.youracclaim.com/size/110x110/images/e9f23497-11a7-489b-9a5a-68e031d36bee/DNA_Git.png" alt="" /> </a> </div>
+                                    <div class="client-logo"> <a href="https://www.youracclaim.com/badges/c12c5c8b-9242-4e8a-a192-d4cc8517d4ea" target="_blank"> <img src="https://images.youracclaim.com/size/110x110/images/75bdc6a0-b747-41a2-ad3f-14137537d26b/DNA_Javascript.png" alt="" /> </a> </div>
+                                    <div class="client-logo"> <a href="https://www.youracclaim.com/badges/4246e3e6-1046-4715-944e-e964d56117be" target="_blank"> <img src="https://images.youracclaim.com/size/110x110/images/afa1434f-530a-40fb-8f50-e4efd1e5b78e/IDN%2BNew%2BCollar%2B-%2BHTML-CSS.png" alt="" /> </a> </div>
+                                    <div class="client-logo"> <a href="https://www.youracclaim.com/badges/70b18178-7825-4971-aaf4-70c25c86f541" target="_blank"> <img src="https://images.youracclaim.com/size/110x110/images/8a4c4bd8-4ff1-4a95-b8ab-2d15fbf77d2d/IDN%2BNew%2BCollar%2B-%2BWeb%2BDevelopment.png" alt="" /> </a> </div>
+                                    <div class="client-logo"> <a href="https://www.youracclaim.com/badges/961b839c-0e89-41fd-b2c8-cd35072a6427" target="_blank"> <img src="https://images.youracclaim.com/size/110x110/images/4d5516c9-2b54-41f3-a576-3d07b8a4a1fb/IDN%2BCreate%2BFront-end%2BApp-%2BInnovator%2BAward%2BV2.png" alt="" /> </a> </div>
+                                    <div class="client-logo"> <a href="https://www.youracclaim.com/badges/f09692b1-d806-4d3b-95e3-2c2e627fdb52" target="_blank"> <img src="https://images.youracclaim.com/size/110x110/images/45b61baf-9831-4df0-ab2c-79f3f07801fe/IDN%2BCreate%2BBack-End%2BApp-%2BInnovator%2BAward%2BV2.png" alt="" /> </a> </div>
+                                    <div class="client-logo"> <a href="https://www.youracclaim.com/badges/e895f1da-ef8c-48cc-b12f-cb809faf3a0d" target="_blank"> <img src="https://images.youracclaim.com/size/110x110/images/5d0ab050-ff21-4ddd-884d-412bf597f2b6/IDN%2BCreate%2BWeb%2BPage-%2BInnovator%2BAward%2BV2.png" alt="" /> </a> </div>
+                                    <div class="client-logo"> <a href="https://www.youracclaim.com/badges/e9212ee0-3a34-4003-88b8-c7f049ecc00b" target="_blank"> <img src="https://images.youracclaim.com/size/110x110/images/ae9d8d06-ea24-435c-892d-ed82d049b3ef/App%2BSecurity%2BAnaly%2B-%2BExpl%2BAward%2BStu%2Bv2.png" alt="" /> </a> </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="animate-up" style="padding-top: 70px;">
+                            <h2 class="section-title">Projets personnelles en cours</h2>
+                            <div class="section-box">
+                                <div class="row">
+                                    <div class="col-sm-12">
+                                        <div class="progress-bar">
+                                            <div class="bar-data"> <span class="bar-title"><b>Moteurs de téléchargement JavaScript</b> : </span>
+                                                <ul>
+                                                    <li>Commancer le téléchargement avec périphirique et la possiblité de le reprendre avec un autre périphérique</li>
+                                                    <li>Booster la vitesse de téléchargement avec les connexions concurrentes et la stratégies de choix</li>
+                                                    <li>Compatible avec le protocole HLS (Byte-range, key, iv) non crypté et crypté avec un seul et plusieurs clés avec le parseur approprié</li>
+                                                    <li>Compatible le standard de format "MPEG-DASH" non crypté et crypté avec un clé avec le parseur approprié</li>
+                                                    <li><b>GUI</b> : Barre de progression responsive et à multi chargement en mêmes temps, Diagramme de gantt</li>
+                                                    <li><b>Code</b> : source JavaScript à 100% et écrit de zéro, aucune bibliothèque ni dépendances n'est requises</li>
+                                                    <li><b>Tags</b>: JavaScript (ES10)</li>
+                                                </ul>
+                                            </div>
+                                            <div class="bar-line"> <span class="bar-fill" data-width="70%"></span> </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-12">
+                                        <div class="progress-bar">
+                                            <div class="bar-data"> <span class="bar-title"><b>Plateforme de streaming (Films, Series, Live)</b> : </span>
+                                                <ul>
+                                                    <li>Échange de données cryptées AES-GCM 128 de bout en bout (Web APIs: window.crypto.subtle) </li>
+                                                    <li>Ulisation du project HLS.js</li>
+                                                    <li><b>GUI</b> : interface responsives et ne requises aucune bibliothèque ni dépendances</li>
+                                                    <li><b>Tags</b>: HTML5, CSS3, JavaScript (ES10), PHP 7.4.4, NGINX, mysql</li>
+                                                </ul>
+                                            </div>
+                                            <div class="bar-line"> <span class="bar-fill" data-width="80%"></span> </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-sm-12">
+                                        <div class="progress-bar">
+                                            <div class="bar-data"> <span class="bar-title"><b>Uniformalisation de tous type de notifications WEB (facebook, gmail, twitter ...)</b> :</span>
+                                                <ul>
+                                                    <li>Mécanisme d'échnages d'informations multi channel en temps réel</li>
+                                                    <li>Discussion instantané moderne qui offre un temps de réponse très court et un échange optimiser d'informations</li>
+                                                    <li>Un Chatbot qui suit l'utilisateur entre les sites (cross-domain) et entre les navigateurs aussi</li>
+                                                    <li><b>Tags</b>: HTML5, CSS3, JavaScript (ES10), node.js, express.js, MongoDB</li>
+                                                </ul>
+                                            </div>
+                                            <div class="bar-line"> <span class="bar-fill" data-width="31%"></span> </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section id="experience" class="section section-experience">
+                        <div class="animate-up">
+                            <h2 class="section-title">Expérience professionnelle</h2>
+                            <div class="timeline">
+                                <div class="timeline-bar"></div>
+                                <div class="timeline-inner clearfix">
+                                    <div class="timeline-box "> <span class="dot"></span>
+                                        <div class="timeline-box-inner "> <span class="arrow"></span>
+                                            <div class="timeline-head">
+                                                <div class="date">Décembre 2019 - Aujourd'hui</div>
+                                                <h4>Développeur full stack</h4>
+                                            </div>
+                                            <ul>
+                                                <li><b>WEB</b> : Réaliser une rubrique Statistique<br><br> + <i>Vue.js, node.js ;</i><br> + <i>Amcharts 4 Vs Développer de 0 | 50% / 50% ;</i><br> + <i>Des Agents de collecte d'informations; </i><br> + <i>Un mécanisme de rafrissement de données en temps réel; </i> + <i>Des filtres de recherche avancée (par type de périphériques mobile, desktop, par jour, par interval de jours ...</i> </li> <br>
+                                                <hr>
+                                                <li><b>Mobile</b> : Réaliser une application mobile Hybride qui regroupe une liste de plus que 50 stations de Radio WEB régionales en Tunisie<br><br> + <i>Ionic 4 & Angular 8; </i><br> + <i>Une map vectoriel responsive et intéractive; </i><br> + <i>Des filtres de recherche avancée; </i><br> + <i>Un lecteur audio moderne avec le nom d'émission (metadata) en temps réel ;</i><br> + <i>Ergonomique et soigneusement optimisée pour offrir la meilleure expérience possible;</i><br> + <i>Téléverser sur Google Play.</i> </li> <br>
+                                                <hr>
+                                                <li><b>Systèmes d'exploitations</b> : Se familiariser encore plus en installant l'environnement de travail sur différent OS<br><br> + <i>Ubuntu (18.04, 19.04, 20.04);</i><br> + <i>Windows Server (2012)</i> </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="timeline-box timeline-box-compact "> <span class="dot"></span>
+                                        <div class="timeline-box-inner "> <span class="arrow"></span>
+                                            <div class="timeline-head">
+                                                <div class="date">Août 2019 - Septembre 2019</div>
+                                                <h4>Développeur full stack</h4> <a class="img" href="https://artify.tn"> <img src="./img/Artify.png" alt=""> </a>
+                                            </div>
+                                            <li><b>WEB</b> : Réaliser le slideshow de la page d'accueil, la page profil utilisateur, renouveler le certificat SSL expiré, régler le problème du contenu mixte, forcer la redirection des URLs (HTTP) vers la version la plus sécurisée (HTTPS) de la plateforme du streaming légal Artify et développer un système de notification dans le cadre des préparations qui précédaient la mise en production de la deuxième version du site web https: //artify.tn ...<br><br> + <i>UI kit ;</i><br> + <i>MongoDB, node.js, express.js, ejs, webpack, babel ;</i><br> + <i>Jira, Gitlab, Gitkraken, Source Tree ;</i><br> + <i>NGINX</i><br>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                    </section>
+                    <section id="education" class="section section-education">
+                        <div class="animate-up">
+                            <h2 class="section-title">Éducation</h2>
+                            <div class="timeline">
+                                <div class="timeline-bar"></div>
+                                <div class="timeline-inner clearfix">
+                                    <div class="timeline-box timeline-box-compact "> <span class="dot"></span>
+                                        <div class="timeline-box-inner "> <span class="arrow"></span>
+                                            <div class="timeline-head">
+                                                <div class="date">2017 - 2020</div>
+                                                <h3>Cycle Ingénieur en Informatique</h3>
+                                                <div class="timeline-head"> <a class="img" href="https://esprit.tn" target="_blank">
+                                                        <h4 style=" text-align: center; ">Ecole Supérieure Privée d'Ingénierie et de Technologies - ESPRIT</h4> <img src="./img/1.png" alt="">
+                                                    </a> </div>
+                                            </div>
+                                            <p><b>Spécialité (NIDS)</b> :<br>infrastructure réseau et sécurité des données <br><br> <b>Activités scolaire</b> : <br>Organisation des mini-challenges et des workshops entre amis passionnés trop souvent dans "Sifaris Lab" à ESPRIT. "Sifaris Lab" est un laboratoire à accès biométrique, très bien équipé, essentiellement dédié à promouvoir les travaux de recherche en cybersécurité et en investigation numérique.<br><br> <b>Activités extra-scolaire :</b> <br>Jogging, lecture, Club CyberSec, Club théâtre </p>
+                                        </div>
+                                    </div>
+                                    <div class="timeline-box timeline-box-compact "> <span class="dot"></span>
+                                        <div class="timeline-box-inner "> <span class="arrow"></span>
+                                            <div class="date">2017</div>
+                                            <h3>Diplôme: Licence Fondamentale en sciences de l'Informatique (LFI)</h3>
+                                            <div class="timeline-head"> <a class="img" href="http://www.isima.rnu.tn" target="_blank">
+                                                    <h4 style=" text-align: center; ">Institut Superieur d'informatique de Mahdia</h4> <img src="./img/0.jfif" alt="">
+                                                </a> </div>
+                                            <p><b>Projet de fin d'études (PFE) :</b> <br>Validé avec mention Excellent<br><br> <b>Missions et tâches réalisées</b> : <br>Stagiaire au département informatique de Institut Supérieur des Arts et Métiers de Mahdia (ISAMM) afin de trouver des solutions informatiques pour automatiser des opérations liées au domaine de ressources humaines telles que la gestion des employés, la gestion des documents administratifs et la gestion des congés ...<br><br> <b>Activités extra-scolaire :</b> <br>Club Microsoft ISIMa (Responsable développement), jogging, football, tennis, jeu d'échecs </p>
+                                        </div>
+                                    </div>
+                                    <div class="timeline-box timeline-box-compact "> <span class="dot"></span>
+                                        <div class="timeline-box-inner "> <span class="arrow"></span>
+                                            <div class="date">2012</div>
+                                            <h3>Diplôme: Baccalauréat section Technique</h3> <img class="img" src="" alt="">
+                                            <h4> Lycée privé EL HORRIA </h4>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                    </section>
+                    <section id="interests" class="section section-interests">
+                        <div class="animate-up">
+                            <h2 class="section-title">Centres d'intérêts</h2>
+                            <div class="section-box">
+                                <ul class="interests-list">
+                                    <li> <i class="map-icon map-icon-bicycling"></i> <span>Faire de la bicyclette</span> </li>
+                                    <li> <i class="map-icon map-icon-movie-theater"></i> <span>Regarder des films</span> </li>
+                                    <li> <i class="map-icon map-icon-tennis"></i> <span>Jouer au tennis</span> </li>
+                                    <li> <i class="map-icon map-icon-swimming"></i> <span>Natation</span> </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </section>
+                    <section id="calendar" class="section section-calendar">
+                        <div class="animate-up">
+                            <h2 class="section-title">Calendrier de disponibilité</h2>
+                            <div class="section-box">
+                                <div class="calendar-busy">
+                                    <div class="calendar-today" style="background: url('./css/img/rs-calendar-cover.jpg')">
+                                        <div class="valign-outer">
+                                            <div class="valign-middle">
+                                                <div class="valign-inner">
+                                                    <div class="date"> <span class="day"></span> <span class="month"></span> </div>
+                                                    <div class="week-day"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="calendar-cont">
+                                        <div class="calendar-header">
+                                            <div class="calendar-nav"> <span class="active-date"><span class="active-month"></span><span class="active-year"></span></span> <a class="calendar-prev ripple-centered" title="Prev"><i class="rsicon rsicon-chevron_left"></i></a> <a class="calendar-next ripple-centered" title="Next"><i class="rsicon rsicon-chevron_right"></i></a> </div>
+                                        </div> <input type="hidden" value="2020,06,01&2020,06,02&2020,06,03&2020,06,04&2020,06,05&2020,06,08&2020,06,09&2020,06,10&2020,06,11&2020,06,12&2020,06,15&2020,06,16&2020,06,17&2020,06,18&2020,06,19&&2020,06,22&&2020,06,23&&2020,06,24&&2020,06,25&&2020,06,26&&2020,06,29&&2020,06,30" class="busy_days_to_js">
+                                        <table class="calendar-body">
+                                            <thead class="calendar-thead"></thead>
+                                            <tbody class="calendar-tbody"></tbody>
+                                        </table>
+                                        <div class="calendar-busy-note"><span class=" busy-day" style=" width: 18px; position: absolute; left: 0; height: 18px; background-attachment: fixed; background-color: #07aaf5; background-image: linear-gradient(#07aaf5 0%, #005fff 50%, #9200ff 100%); "></span> Je ne serai pas disponible ces jours-là de 8h à 17h</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section id="contact" class="section section-contact">
+                        <div class="animate-up">
+                            <h2 class="section-title">Contact</h2>
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <div class="section-box"> <iframe style="width: 100%; position: absolute; top: 0; left: 0; right: 0; height: 100%;" src="https://docs.google.com/forms/d/e/1FAIpQLSd_gsKCAiRSRc9Z7okud-T1lK54B6Zyo9gG4GKwzQa6fNInlw/viewform"></iframe> </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="section-box contact-info has-map">
+                                        <ul class="contact-list">
+                                            <li class="clearfix"> <strong>E-mail :</strong> <span><a href="mailto:yassine.dorboz@gmail.com">yassine.dorboz@gmail.com</a></span> </li> <br>
+                                            <li class="clearfix"> <strong>Téléphone :</strong> <span>(+216) 52 665 797</span> </li> <br>
+                                            <li class="clearfix"> <strong>Adresse :</strong> <span>Ariana, Tunis</span> </li>
+                                        </ul>
+                                        <hr> <iframe id="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30589.02389004741!2d10.15285032562939!3d36.86885676579251!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12e2cb4e31471bf3%3A0x65bc5efbce842198!2sAriana!5e1!3m2!1sfr!2stn!4v1591072636608!5m2!1sfr!2stn" width="600" height="450" frameborder="0" style="border:0;margin:0" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+            <footer class="footer">
+                <div class="footer-social">
+                    <ul class="social">
+                        <li><a href="https://www.facebook.com/yassine.modifier" target="_blank"><i class="rsicon rsicon-facebook"></i></a></li>
+                        <li><a href="https://tn.linkedin.com/in/yassine-dorboz" target="_blank"><i class="rsicon rsicon-linkedin"></i></a></li>
+                    </ul>
+                </div>
+            </footer>
+        </div> <a href="#" class="btn-scroll-top"><i class="rsicon rsicon-arrow-up"></i></a>
+        <div id="overlay"></div>
+        <div id="preloader">
+            <div class="preload-icon"><span></span><span></span></div>
+            <div class="preload-text"></div>
+        </div>
+        <script type="text/javascript">
+            var c = document.body.className;
+            c = c.replace(/woocommerce-no-js/, 'woocommerce-js');
+            document.body.className = c;
+        </script>
+        <script type='text/javascript' src='./js/js.js'></script>
+        <script type='text/javascript' src='./js/map-icons.min.js'></script>
+        <script type='text/javascript' src='./js/imagesloaded.min.js'></script>
+        <script type='text/javascript' src='./js/isotope.pkgd.min.js'></script>
+        <script type='text/javascript' src='./js/jquery.appear.js'></script>
+        <script type='text/javascript' src='./js/jquery.onepagenav.min.js'></script>
+        <script type='text/javascript' src='./js/jquery.bxslider.min.js'></script>
+        <script type='text/javascript' src='./js/jquery.mCustomScrollbar.concat.min.js'></script>
+        <script type='text/javascript' src='./js/mediaelement-and-player.min.js'></script>
+        <script type='text/javascript' src='./js/mediaelement-migrate.min.js'></script>
+        <script type='text/javascript'>
+            /* <![CDATA[ */
+            var _wpmejsSettings = {
+                "pluginPath": "\/startuper\/wp-includes\/js\/mediaelement\/",
+                "classPrefix": "mejs-",
+                "stretching": "responsive"
+            }; /* ]]> */
+        </script>
+        <script type='text/javascript' src='./js/owl.carousel.js'></script>
+        <script type='text/javascript' src='./js/slick.min.js'></script>
+        <script type='text/javascript' src='./js/jquery.smartsticky.js'></script>
+        <script type='text/javascript' src='./js/wp-embed.min.js?ver=4.9.13'></script>
     </body>
 
-</html>
+    </html>
