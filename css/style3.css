@@ -3,7 +3,11 @@
     margin-bottom:20px;
 }
 .say i{
-    color: #07aaf5; font-size: 28px; font-weight: bold;padding:10px
+    color: #07aaf5;
+	font-size: 28px;
+	font-weight: bold;
+	padding:10px;
+	font-style: normal;
 }
 .poste{
 	color: rgb(135, 135, 135);
