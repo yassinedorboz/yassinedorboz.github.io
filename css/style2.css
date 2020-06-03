@@ -4435,6 +4435,7 @@ body {
 
 .section-about .profile-photo {
     margin-right: 10%;
+    margin-top: 40px;
     margin-bottom: 10px;
 }
 
@@ -4471,6 +4472,7 @@ body {
 .profile-photo img {
     width: 100%;
     display: block;
+    border-radius: 13px;
 }
 
 .profile-photo .photo-hover {
