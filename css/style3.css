@@ -1,3 +1,10 @@
+.say{
+    text-align: center;
+    margin-bottom:20px;
+}
+.say i{
+    color: #07aaf5; font-size: 28px; font-weight: bold;padding:10px
+}
 .poste{
 	color: rgb(135, 135, 135);
 	font-size: 13px;
