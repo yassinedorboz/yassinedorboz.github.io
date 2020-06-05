@@ -955,7 +955,7 @@
 
         /** Google Map Initialisation */
         if ($('#map').length > 0) {
-            initialiseGoogleMap();
+            typeof google !== "undefined" && initialiseGoogleMap();
         }
 
         /** Blog */
