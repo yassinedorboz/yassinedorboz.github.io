@@ -4416,7 +4416,7 @@ body {
  * 11.2 - Section About
  */
 .section-about {
-    padding-top: 40px;
+    /*padding-top: 40px;*/
     position: relative;
 }
 
