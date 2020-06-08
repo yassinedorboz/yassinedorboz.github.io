@@ -6389,6 +6389,14 @@ padding: 0;
 	border-radius: 3px;
 }
 
+.current-day{
+  box-shadow: 0 0 5px #000!important;
+  font-weight: bold;
+  text-shadow: 0 0 4px #000;
+  border: 2px solid rgb(255, 165, 0);
+  background: rgba(0, 0, 0, 0.5)!important;
+}
+
 .calendar-busy .calendar-body td .busy-day {
 	background-color: #cacaca !important;
 }
