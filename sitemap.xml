@@ -1,15 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
-  <loc>https://yassinedorboz.com/</loc>
-  <lastmod>2020-06-20T06:00:00+00:00</lastmod>
-  <priority>1.00</priority>
+  <loc>https://yassine.dorboz.com/</loc>
+  <changefreq>weekly</changefreq>
 </url>
 
 <url>
-  <loc>https://yassinedorboz.com/en/</loc>
-  <lastmod>2020-06-25T06:00:00+00:00</lastmod>
-  <priority>1.00</priority>
+  <loc>https://yassine.dorboz.com/en/</loc>
+  <changefreq>weekly</changefreq>
 </url>
-      
+
 </urlset>
