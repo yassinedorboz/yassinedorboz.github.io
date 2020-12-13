@@ -55,13 +55,13 @@
 	<script src="./js/jquery.js"></script>
 	<script>
 		/* <![CDATA[ */
-		((a = document.URL.split('?')) && a.length > 1 && this.location.replace(a[0]));
+		(a = document.URL.split`?`).length > 1 && location.replace(a[0]);
 
 		var date = {
 			"months": ['Janvier', 'Février', 'Mars', 'Avril', 'Mai', 'Juin', 'Juillet', 'Août', 'Septembre', 'Octobre', 'Novembre', 'Décembre'],
 			"weeks": ['Dimanche', 'Lundi', 'Mardi', 'Mercredi', 'Jeudi', 'Vendredi', 'Samedi']
 		};
-        /* ]]> */
+    /* ]]> */
 	</script>
 	<script src="./js/site.js?ver=1"></script>
 </head>
